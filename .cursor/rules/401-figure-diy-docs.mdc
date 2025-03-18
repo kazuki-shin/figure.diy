@@ -1,1 +1,45 @@
- 
+---
+description: STANDARDIZE Figure.DIY documentation format to ENSURE consistency and readability
+globs: *.md
+---
+
+# Figure.DIY Documentation Standards
+
+<version>1.0.1</version>
+
+## Context
+- When creating or editing Markdown documentation for the Figure.DIY project
+- When updating project descriptions, technical documentation, or user guides
+
+## Requirements
+- Use "Figure.DIY" with exact capitalization (not "Figure.diy" or "figure.DIY")
+- Structure technical documents with standard sections:
+  1. Introduction
+  2. System Architecture
+  3. Requirements
+  4. Interfaces
+  5. Testing
+  6. Future Considerations
+- Bold key technical terms and capabilities using **double asterisks**
+- Italicize emphasis points using *single asterisks*
+- Format sections as "X. Section Title" with backslash before periods in Markdown links
+- Use consistent component terminology:
+  - "SO-ARM100" for robotic arms
+  - "Jetson Orin NX" for computing unit
+  - "ReSpeaker" for microphone array
+  - "reCamera" for vision system
+- Include reference links for external sources using standard Markdown format
+- Always introduce hardware with full names first, then abbreviations in parentheses
+
+## Examples
+<example>
+**Figure.DIY** uses two **SO-ARM100 robotic arms** (6-DOF) with the **Jetson Orin NX** processing unit to manipulate objects based on voice commands.
+
+This correctly formats project name, hardware components, and uses appropriate emphasis.
+</example>
+
+<example type="invalid">
+Figure.diy uses 2 SO ARM100 arms with the jetson computer to manipulate objects.
+
+This uses inconsistent capitalization, lacks proper emphasis, and omits technical specifications.
+</example> 

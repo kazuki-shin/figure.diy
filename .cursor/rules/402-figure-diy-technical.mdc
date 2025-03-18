@@ -1,5 +1,41 @@
 ---
-description: 
-globs: 
+description: ENFORCE precise technical specifications to MAINTAIN hardware documentation accuracy
+globs: *.md
 ---
- 
+
+# Figure.DIY Technical Specifications Standards
+
+<version>1.0.1</version>
+
+## Context
+- When documenting hardware components or technical specifications
+- When describing system architecture, performance requirements, or hardware interfaces
+
+## Requirements
+- Include exact model numbers for all hardware components (e.g., "SO-ARM100", "reComputer J4012")
+- Specify technical parameters with proper units (e.g., "19.5 kg·cm at 7.4V", "100 TOPS")
+- Always include degrees of freedom (DOF) when describing robotic arms (e.g., "6-DOF")
+- Specify computing platform with complete details (e.g., "NVIDIA Jetson Orin NX 16GB")
+- Use standard terminology for AI frameworks:
+  - "LeRobot" for robotics framework
+  - "YOLOv8" for object detection
+  - "Whisper ASR" for speech recognition
+- Maintain consistent naming for hardware components:
+  - "Arm-A" for leader arm, "Arm-B" for follower arm
+  - "Jetson" or "Orin NX" for computing unit
+  - "ReSpeaker" for audio input device
+- Document all interfaces with specific types (e.g., "USB 3.2", "UART bus")
+- Specify power requirements with exact values and units (e.g., "20W–40W")
+
+## Examples
+<example>
+The **reComputer J4012 (Jetson Orin NX 16GB)** provides 100 TOPS of AI performance with 1024 CUDA cores. Each **SO-ARM100** offers **6-DOF** using *Feetech STS3215* servos at 19.5 kg·cm torque (7.4V).
+
+This correctly specifies model numbers, technical parameters with units, and interface details.
+</example>
+
+<example type="invalid">
+The Jetson computer provides high performance with many cores. Each robotic arm offers several movement options using servo motors with good torque.
+
+This lacks specific model numbers, precise measurements with units, and detailed specifications.
+</example> 
